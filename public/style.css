@@ -1,0 +1,45 @@
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZYokSds18S0xR41.woff2) format('woff2');
+}
+
+/* palette */
+:root {
+  --white: #fffcf2;
+  --vivid: #232ed1;
+  --indigo: #414288;
+  --dark-indigo: #2c2d5c;
+  --star: #f7dd72;
+  --comet: #ee964b;
+  --fire: #f78154;
+  --red: #fb6107;
+  --black: #0a090c;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Source Sans Pro';
+}
+
+.player {
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  letter-spacing: 0.7rem;
+  color: var(--fire);
+}
+
+.player-name {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}

@@ -1,10 +1,13 @@
 require 'sinatra'
-require 'rspec'
-require 'capybara'
-require 'pry'
+#require 'rspec'
+#require 'capybara'
+#require 'pry'
 require 'shotgun'
 
+set :session_secret, 'super secret'
+
 get '/' do
+ # p 'Testing battle launch'
   erb :startgame
 end
 
