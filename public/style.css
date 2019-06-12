@@ -62,7 +62,8 @@ h1 {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: var(--black)
+  background-color: var(--black);
+  color: var(--comet);
 }
 
 .playertwo {
@@ -70,7 +71,8 @@ h1 {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: var(--black)
+  background-color: var(--black);
+  color: var(--fire);
 }
 
 .player {

@@ -7,6 +7,11 @@ class PlayerTwoHitPoints
     @playertwohp -= attack
   end
 
+  def pretty_player_two
+    "HIT POINTS: #{@playertwohp}"
+  end
+
+
   private
 
   attr_accessor :playertwohp
