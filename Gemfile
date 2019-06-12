@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 gem 'rspec'
-gem 'pry'
+gem 'pry' 
 gem 'capybara'
 gem 'sinatra'
 gem 'shotgun'
