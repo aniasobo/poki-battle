@@ -7,7 +7,6 @@ require 'shotgun'
 set :session_secret, 'super secret'
 
 get '/' do
- # p 'Testing battle launch'
   erb :startgame
 end
 

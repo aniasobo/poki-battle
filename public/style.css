@@ -27,19 +27,91 @@
 }
 
 body {
-  background: var(--black);
+  background-image: url("imgs/ghidorahvsgodzilla.jpg");
+  background-repeat: no-repeat;
   color: var(--white);
   font-family: 'Source Sans Pro';
+}
+
+h1 {
+  color: var(--red);
+}
+
+.ring {
+  display: grid;
+  grid-template-columns: 300px 400px 300px;
+  grid-template-rows: 150px 150px 150px 150px;
+
+}
+
+.playeroneis {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.playertwois {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.playerone {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: var(--black)
+}
+
+.playertwo {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: var(--black)
 }
 
 .player {
   font-family: 'Source Sans Pro';
   font-weight: 400;
-  letter-spacing: 0.7rem;
+  font-size: 40px;
   color: var(--fire);
+  padding: 1em;
 }
 
 .player-name {
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: 3rem;
+}
+
+.launch {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: var(--star);
+  width: 500px;
+  height: 100px;
+  border: 10px solid var(--dark-indigo);
+  font-family: 'Source Sans Pro';
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-style: bold;
+  position: absolute;
+  top: 250px;
+}
+
+.launchy {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: var(--star);
+  width: 500px;
+  height: 100px;
+  border: 10px solid var(--dark-indigo);
+  font-family: 'Source Sans Pro';
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-style: bold;
 }
