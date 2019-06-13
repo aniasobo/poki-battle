@@ -1,6 +1,6 @@
 ENV['RACK_ENV'] = 'test'
 
-require File.join(File.dirname(__FILE__), '..', 'battle-controller.rb')
+require File.join(File.dirname(__FILE__), '..', './lib/battle-controller.rb')
 
 require 'battle-controller'
 require 'capybara'
