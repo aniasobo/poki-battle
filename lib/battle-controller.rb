@@ -6,7 +6,7 @@ class Battle < Sinatra::Base
   configure do
     set :views, "lib/views"
     set :public_dir, "public"
-    set :session_secret, "stuff"
+    set :session_secret, "add a very complicated random string here"
   end
 
   enable :sessions
