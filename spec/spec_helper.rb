@@ -1,8 +1,8 @@
 ENV['RACK_ENV'] = 'test'
 
-require File.join(File.dirname(__FILE__), '..', 'poki-battle.rb')
+require File.join(File.dirname(__FILE__), '..', 'battle-controller.rb')
 
-require 'poki-battle'
+require 'battle-controller'
 require 'capybara'
 require 'capybara/rspec'
 

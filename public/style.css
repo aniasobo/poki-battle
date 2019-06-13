@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -13,7 +12,6 @@
   src: url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZYokSds18S0xR41.woff2) format('woff2');
 }
 
-/* palette */
 :root {
   --white: #fffcf2;
   --vivid: #232ed1;

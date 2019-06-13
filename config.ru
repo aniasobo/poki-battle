@@ -1,2 +1,4 @@
-require_relative ".poki-battle.rb"
+# require_relative './config/environment' ??
+
+require_relative ".battle-controller.rb"
 run Battle

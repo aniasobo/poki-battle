@@ -7,6 +7,11 @@ require_relative './playeronehp'
 require_relative './playertwohp'
 
 class Battle < Sinatra::Base
+  # configure do
+ # set :views, "lib/views"
+ # set :public_dir, "public"
+ # end
+  
   get '/' do
     erb :startgame
   end
@@ -21,7 +26,7 @@ class Battle < Sinatra::Base
     erb :battle
   end
 
-  post '/battle' do
+  post '/battle' do  # the below does not work
     @player_one = PlayerOneHitPoints.new(params[:player1name]).pretty_player_one
     @player_two = PlayerTwoHitPoints.new(params[:player2name]).pretty_player_two
     erb :battle
