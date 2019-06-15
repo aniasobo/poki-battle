@@ -19,36 +19,20 @@ class Battle < Sinatra::Base
 
   post '/names' do
     # NEVER USE GLOBAL VARS EXCEPT FOR THIS DEMO
-    $player1 = Player.new(params[:player1name])
-    $player2 = Player.new(params[:player2name])
-    #@player1name = params[:player1name]
-    #@player2name = params[:player2name]
-
-    #session[:player1name] = @player1name
-    #session[:player2name] = @player2name
+    player1 = Player.new(params[:player1name])
+    player2 = Player.new(params[:player2name])
+    $game = Game.new(player1, player2)
     redirect '/battle'
   end
 
   get '/battle' do  
-    @prettyplayer1 = $player1.pretty_player
-    @prettyplayer2 = $player2.pretty_player
-    @player1name = $player1.name
-    @player2name = $player2.name 
-#    @player1name = session[:player1name]
-#    @player2name = session[:player2name]
+    @game = $game
     erb :battle
   end
 
   get '/attac' do
-    @player1name = $player1.name
-    @player2name = $player2.name 
-    @prettyplayer1 = $player1.pretty_player
-    @prettyplayer2 = $player2.pretty_player
-    @player1 = $player1
-    @player2 = $player2
-    Game.new.attack(@player2)
- #   @player1name = session[:player1name]
- #   @player2name = session[:player2name]
+    @game = $game
+    @game.attack(@game.player2)
     erb :attac  
   end
 

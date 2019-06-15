@@ -2,9 +2,9 @@
 <source src="https://ia902906.us.archive.org/16/items/filmcd201/01%20-%20Akira%20Ifukube%20-%20Main%20Title%20%28Gojira%2C%201954%29.mp3" type="audio/mpeg">
 </audio>
 <div class ="ring">
-   <span class="attac"><%= @player2name %> takes a hit from <%= @player1name %></span>
-   <div class="playertwo"><%= @prettyplayer2 %><br><a class="fight" href=""><%= @player2name %>: FIGHT! </a></div>
-   <div class="playerone"><%= @prettyplayer1 %><br><span class="fight" href=""><%= @player1name %>: FIGHT!</span></div>
+   <span class="attac"><%= @game.player2.name %> takes a hit from <%= @game.player1.name %></span>
+   <div class="playertwo"><%= @game.player2.name %> HIT POINTS: <%= @game.player2.hp %><br><a class="fight" href="/battle"><%= @game.player2.name %>: FIGHT! </a></div>
+   <div class="playerone"><%= @game.player1.name %> HIT POINTS: <%= @game.player1.hp %><br><span class="fight" href="/battle"><%= @game.player1.name %>: FIGHT!</span></div>
 </div>
 
 
