@@ -11,7 +11,7 @@ feature 'testing infrastructure' do
     fill_in 'player1name', with: 'Gidorah'
     fill_in 'player2name', with: 'Godzilla'
     click_button 'Enter the ring'
-    expect(page).to have_content "In the top left corner, we got the featherweight noob Gidorah! Meanwhile, Godzilla, in the bottom right corner, stretching.\nTEST"
+    expect(page.text).to match(/In the top left corner, we got the featherweight noob Gidorah! Meanwhile, Godzilla, in the bottom right corner, stretching./)
   end
 
   scenario 'displays players hit points' do
@@ -19,7 +19,7 @@ feature 'testing infrastructure' do
     fill_in 'player1name', with: 'Gidorah'
     fill_in 'player2name', with: 'Godzilla'
     click_button 'Enter the ring'
-    expect(page).to have_content ""
+    expect(page.text).to match(/Godzilla: 100 Hit Points/)
   end
 end
 
