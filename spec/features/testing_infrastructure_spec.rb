@@ -15,5 +15,11 @@ feature 'testing infrastructure' do
     sign_in_and_play
     expect(page.text).to match(/Godzilla: 100 Hit Points/)
   end
+
+  scenario 'player 1 attacks player 2' do
+    sign_in_and_play
+    click_link('Gidorah: FIGHT!') 
+    expect(page.text).to match(/Godzilla takes a hit from Gidorah/)
+  end
 end
 

@@ -132,3 +132,23 @@ h1 {
   font-size: 2rem;
   font-style: bold;
 }
+
+.fight {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: 2rem;
+  color: var(--red);
+  font-family: 'New Rocker';
+  text-decoration: none;
+  text-justify: auto;
+}
+
+.attac {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3; 
+  font-family: 'New Rocker';
+  font-size: 4rem;
+  color: var(--white);
+}

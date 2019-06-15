@@ -25,11 +25,15 @@ class Battle < Sinatra::Base
   end
 
   get '/battle' do  
-  #  @player_one = PlayerOneHitPoints.new(params[:player1name]).pretty_player_one
-  #  @player_two = PlayerTwoHitPoints.new(params[:player2name]).pretty_player_two
-  @player1name = session[:player1name]
-  @player2name = session[:player2name]
-  erb :battle
+    @player1name = session[:player1name]
+    @player2name = session[:player2name]
+    erb :battle
+  end
+
+  get '/attac' do
+    @player1name = session[:player1name]
+    @player2name = session[:player2name]
+    erb :attac  
   end
 
   run! if app_file == $0
