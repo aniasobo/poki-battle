@@ -2,8 +2,8 @@ class Player
   LIFE = 100
   HIT = 10
 
- # attr_reader :name
-  attr_accessor :hp
+  attr_reader :name
+  attr_reader :hp
 
   def initialize(name)
     @name = name
@@ -12,6 +12,14 @@ class Player
 
   def name
     @name
+  end
+
+  def hp
+    @hp
+  end
+
+  def attack(player)
+    player.damage_to_player
   end
 
   def damage_to_player

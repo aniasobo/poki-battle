@@ -13,7 +13,7 @@ feature 'testing infrastructure' do
 
   scenario 'displays players hit points' do
     sign_in_and_play
-    expect(page.text).to match(/Godzilla: 100 Hit Points/)
+    expect(page.text).to match(/Godzilla HIT POINTS: 100/)
   end
 
   scenario 'player 1 attacks player 2' do
@@ -23,8 +23,12 @@ feature 'testing infrastructure' do
   end
 end
 
-feature 'testing player class' do
-  scenario 'displays player names' do
+feature 'testing player battle' do
+  scenario 'displays affected hit points' do
+    sign_in_and_play
+    click_link('Gidorah: FIGHT!') 
+    expect(page.text).not_to match(/Godzilla HIT POINTS: 100/)
+    expect(page.text).to match(/Godzilla HIT POINTS: 90/)
   end
 end
 

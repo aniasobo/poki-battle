@@ -43,6 +43,10 @@ class Battle < Sinatra::Base
     @player2name = $player2.name 
     @prettyplayer1 = $player1.pretty_player
     @prettyplayer2 = $player2.pretty_player
+    @player1 = $player1
+    @player2 = $player2
+    @player1.attack(@player2)
+    @player2.attack(@player1)
  #   @player1name = session[:player1name]
  #   @player2name = session[:player2name]
     erb :attac  
