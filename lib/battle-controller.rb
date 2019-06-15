@@ -1,4 +1,5 @@
 require_relative 'player.rb'
+require_relative 'game.rb'
 require 'sinatra/base'
 require 'shotgun'
 
@@ -45,8 +46,7 @@ class Battle < Sinatra::Base
     @prettyplayer2 = $player2.pretty_player
     @player1 = $player1
     @player2 = $player2
-    @player1.attack(@player2)
-    @player2.attack(@player1)
+    Game.new.attack(@player2)
  #   @player1name = session[:player1name]
  #   @player2name = session[:player2name]
     erb :attac  
