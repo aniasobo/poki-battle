@@ -23,3 +23,9 @@ feature 'testing infrastructure' do
   end
 end
 
+feature 'testing player class' do
+  scenario 'displays player names' do
+  end
+end
+
+
