@@ -3,6 +3,7 @@ ENV['RACK_ENV'] = 'test'
 require File.join(File.dirname(__FILE__), '..', './lib/battle-controller.rb')
 
 require 'battle-controller'
+require 'features/web_helpers'
 require 'capybara'
 require 'capybara/rspec'
 
