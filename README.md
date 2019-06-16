@@ -3,3 +3,9 @@
 - add test coverage
 - generate new copy with each redirect to battle view
 - add ability to injure player 1
+- leave theme music for Enter the ring, add punch and damage sounds to the attack view
+- extract an Attack class
+- add a losing/winning functionality and view
+- randomise the outcome of attacks so that sometimes the opponend receives extra HP instead of damage
+- add mulitple types of damage
+- add web helpers for attack scenarios
